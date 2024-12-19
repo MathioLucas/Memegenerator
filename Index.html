@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Meme Generator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <h2>Upload Image and Add Caption</h2>
+
+    <!-- Form for uploading image and caption -->
+    <form id="uploadForm">
+        <input type="file" id="imageUpload" accept="image/*" required /><br><br>
+        <div id="imagePreview"></div><br>
+        <input type="text" id="caption" placeholder="Enter caption" required /><br><br>
+        <button type="submit">Generate Meme</button>
+    </form>
+
+    <!-- Container for displaying the result -->
+    <div id="resultContainer"></div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
